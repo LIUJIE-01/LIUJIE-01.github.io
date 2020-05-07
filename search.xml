@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>java方法</title>
+    <url>/2020/05/07/My-New-Post/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="今日目标"><a href="#今日目标" class="headerlink" title="今日目标"></a>今日目标</h3><ul>
+<li>了解方法的概念</li>
+<li>掌握无参数无返回值方法的定义和调用</li>
+<li>掌握有参数无返回值方法的定义和调用</li>
+<li>掌握无参数有返回值方法的定义和调用</li>
+<li>掌握有参数有返回值方法的定义和调用</li>
+</ul>
+<hr>
+<h3 id="1-方法简介"><a href="#1-方法简介" class="headerlink" title="1. 方法简介"></a>1. 方法简介</h3><h4 id="1-1-概述"><a href="#1-1-概述" class="headerlink" title="1.1 概述"></a>1.1 概述</h4><p>方法(method)，也叫函数，是将具有独立功能的代码块组织成为一个整体，使其成为具有特殊功能的代码集.</p>
+<p>例如: 现实生活中, 拿牙刷, 挤牙膏, 刷上排牙, 刷下排牙, 漱口, 这些单独的动作合起来, 就完成了刷牙的动作. </p>
+<p>又例如: 让我们获取数组10和20的最大值, 我们可以通过<code>if语句或者三元运算符</code>实现, 如果再让我们获取22和11之间的最大值, 我们还需要把刚才的逻辑代码在写一次. 这样做很繁琐. 针对于这种情况, 我们就可以把<code>获取两个整数最大值的逻辑代码封装到方法中</code>, 当我们需要比较的时候, 直接调用方法就可以了. 这样做, 非常方便.</p>
+<h4 id="1-2-定义格式"><a href="#1-2-定义格式" class="headerlink" title="1.2 定义格式"></a>1.2 定义格式</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">修饰符 返回值的数据类型 方法名(参数类型 参数名<span class="number">1</span>, 参数类型 参数名<span class="number">2</span>) &#123; <span class="comment">//这里可以写多个参数</span></span><br><span class="line">    <span class="comment">//方法体;</span></span><br><span class="line">    <span class="keyword">return</span> 具体的返回值;	<span class="comment">//加工好的饲料</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-3-格式解释"><a href="#1-3-格式解释" class="headerlink" title="1.3 格式解释"></a>1.3 格式解释</h4><ul>
+<li><p>修饰符: 目前记住这里是固定格式<strong>public static</strong></p>
+</li>
+<li><p>返回值的数据类型: 用于限定返回值的数据类型的.</p>
+<blockquote>
+<p>注意: </p>
+<ol>
+<li>返回值的数据类型是int类型, 则说明该方法只能返回int类型的整数.</li>
+<li>如果方法没有具体的返回值, 则返回值的数据类型要用<strong>void</strong>来修饰.</li>
+</ol>
+</blockquote>
+</li>
+<li><p>方法名: 方便我们调用方法.</p>
+</li>
+<li><p>参数类型: 用于限定调用方法时传入的数据的数据类型.</p>
+<blockquote>
+<p>例如: 参数类型是String类型, 说明我们调用方法时, 只能传入字符串.</p>
+</blockquote>
+</li>
+<li><p>参数名: 用于接收调用方法时传入的数据的变量. </p>
+</li>
+<li><p>方法体: 完成特定功能的代码.</p>
+</li>
+<li><p>return 返回值: 用来结束方法的, 并把返回值返回给调用者. </p>
+<blockquote>
+<p>解释: 如果方法没有明确的返回值, 则return关键字可以省略不写. </p>
+</blockquote>
+</li>
+</ul>
+<h4 id="1-4-注意事项"><a href="#1-4-注意事项" class="headerlink" title="1.4 注意事项"></a>1.4 注意事项</h4><ol>
+<li><p>方法与方法之间是平级关系, 不能嵌套定义.</p>
+</li>
+<li><p>方法必须先创建才可以使用, 该过程称为: 方法定义.</p>
+</li>
+<li><p>方法自身不会直接运行, 而是需要我们手动调用方法后, 它才会执行, 该过程称为方法调用.</p>
+</li>
+<li><p>方法的功能越单一越好. </p>
+</li>
+<li><p>定义方法的时候写在参数列表中的参数, 都是: 形参.  </p>
+<blockquote>
+<p>形参: 形容调用方法的时候, 需要传入什么类型的参数.</p>
+</blockquote>
+</li>
+<li><p>调用方法的时候, 传入的具体的值(变量或者常量都可以), 叫实参. </p>
+<blockquote>
+<p>实参: 调用方法时, 实际参与运算的数据.</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="2-无参无返回值的方法"><a href="#2-无参无返回值的方法" class="headerlink" title="2. 无参无返回值的方法"></a>2. 无参无返回值的方法</h3><h4 id="2-1-定义无参无返回值的方法"><a href="#2-1-定义无参无返回值的方法" class="headerlink" title="2.1 定义无参无返回值的方法"></a>2.1 定义无参无返回值的方法</h4><p>定义方法时, 要做到三个明确, 这样定义方法就会变得非常简单了:</p>
+<ol>
+<li>明确方法名, 即: 方法名要符合小驼峰命名法, 且要见名知意, 方便我们调用.</li>
+<li>明确方法的参数列表.  即: 调用方法时, 我们需要给它(方法)什么数据.</li>
+<li>明确方法的返回值类型, 即: 调用方法完毕后, 方法会返回给我们一个什么类型的数据. </li>
+</ol>
+<p><strong>具体格式</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名() &#123;</span><br><span class="line">    <span class="comment">//方法体;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>需求</strong><br>定义printHello()方法, 用来打印”Hello World!”字符串.</p>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">printHello</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"Hello World!);</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2-2-调用无参无返回值的方法"><a href="#2-2-调用无参无返回值的方法" class="headerlink" title="2.2 调用无参无返回值的方法"></a>2.2 调用无参无返回值的方法</h4><p><strong>格式</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">方法名();</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>解释: 通过<code>方法名();</code>的形式, 可以直接根据方法名调用指定的方法. </p>
+</blockquote>
+<h4 id="2-3-方法调用图解"><a href="#2-3-方法调用图解" class="headerlink" title="2.3 方法调用图解"></a>2.3 方法调用图解</h4><h4 id="2-4-示例一-打印10次HelloWorld"><a href="#2-4-示例一-打印10次HelloWorld" class="headerlink" title="2.4 示例一: 打印10次HelloWorld"></a>2.4 示例一: 打印10次HelloWorld</h4><p><strong>需求</strong><br>定义方法printHelloWorld(), 打印10次HelloWorld!.</p>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>方法的好处:</p>
+<p>可以提高代码的复用性, 方便我们维护程序. </p>
+<p>即: 当一些代码被反复使用时，可以把它们提取出来，放到一个方法里，以方法的形式来使用这些代码。</p>
+</blockquote>
+<h4 id="2-5-示例二-打印奇偶数"><a href="#2-5-示例二-打印奇偶数" class="headerlink" title="2.5 示例二: 打印奇偶数"></a>2.5 示例二: 打印奇偶数</h4><p><strong>需求</strong></p>
+<ol>
+<li>定义方法isEvenNumber(), 在方法内部有一个int类型的变量num.</li>
+<li>判断该变量值是否是偶数, 并打印具体的结果.</li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">略.</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="3-有参无返回值的方法"><a href="#3-有参无返回值的方法" class="headerlink" title="3. 有参无返回值的方法"></a>3. 有参无返回值的方法</h3><p>有参无返回值的方法的意思是: 调用方法时, 我们需要传入具体的参数, 但是方法执行完毕后, 并不会给我们返回具体的结果. </p>
+<p><strong>具体定义格式</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名(参数类型 参数名<span class="number">1</span>, 参数类型 参数名<span class="number">2</span>) &#123;	<span class="comment">//这里可以写多个参数</span></span><br><span class="line">    <span class="comment">//方法体;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>具体调用格式</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">方法名(参数值<span class="number">1</span>, 参数值<span class="number">2</span>);	<span class="comment">//注意: 参数的个数, 以及对应的参数类型都要和定义方法的参数列表保持一致.</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="3-1-示例一-定义求和方法"><a href="#3-1-示例一-定义求和方法" class="headerlink" title="3.1 示例一: 定义求和方法"></a>3.1 示例一: 定义求和方法</h4><p><strong>需求</strong></p>
+<ol>
+<li>定义方法getSum(), 接收两个int类型的整数.</li>
+<li>在方法内部获取上述两个整数的和, 并直接打印.</li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">略.</span><br></pre></td></tr></table></figure>
+
+<p><strong>图解</strong><br>略.</p>
+<h4 id="3-2-示例二-判断奇偶数"><a href="#3-2-示例二-判断奇偶数" class="headerlink" title="3.2 示例二: 判断奇偶数"></a>3.2 示例二: 判断奇偶数</h4><p><strong>需求</strong></p>
+<ol>
+<li>定义方法isEvenNumber(), 该方法接收一个int类型的整数num.</li>
+<li>判断num是奇数还是偶数, 并打印结果.</li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">略.</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="3-3-实例三-获取最大值"><a href="#3-3-实例三-获取最大值" class="headerlink" title="3.3 实例三: 获取最大值"></a>3.3 实例三: 获取最大值</h4><p><strong>需求</strong></p>
+<ol>
+<li>定义方法getMax(), 该方法接收两个整数. </li>
+<li>通过该方法, 获取两个整数的最大值, 并打印.</li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">略.</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4-无参有返回值的方法"><a href="#4-无参有返回值的方法" class="headerlink" title="4. 无参有返回值的方法"></a>4. 无参有返回值的方法</h3><p>无参有返回值的方法的意思是: 调用方法时, 我们不需要传入具体的参数, 但是方法执行完毕后, 会给我们返回具体的结果. </p>
+<p><strong>具体定义格式</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> 返回值的数据类型 方法名() &#123;</span><br><span class="line">    <span class="comment">//方法体;</span></span><br><span class="line">    <span class="keyword">return</span> 具体的返回值;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>具体调用格式</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//直接调用, 无意义. </span></span><br><span class="line">方法名();</span><br><span class="line"></span><br><span class="line"><span class="comment">//输出调用, 在课堂上我可能会经常用, 因为简单. </span></span><br><span class="line">System.out.println(方法名());</span><br><span class="line"></span><br><span class="line"><span class="comment">//赋值调用,  实际开发中推荐使用.</span></span><br><span class="line">数据类型 变量名 = 方法名();</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="4-1-示例一-定义求和方法"><a href="#4-1-示例一-定义求和方法" class="headerlink" title="4.1 示例一: 定义求和方法"></a>4.1 示例一: 定义求和方法</h4><p><strong>需求</strong></p>
+<ol>
+<li>定义方法getSum(), 该方法内部有两个int类型的整数.</li>
+<li>获取上述两个整数的和, 并返回.</li>
+<li>在main方法中调用getSum()方法, 并打印结果.</li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">略.</span><br></pre></td></tr></table></figure>
+
+<p><strong>图解</strong><br>略.</p>
+<h4 id="4-2-示例二-判断奇偶数"><a href="#4-2-示例二-判断奇偶数" class="headerlink" title="4.2 示例二: 判断奇偶数"></a>4.2 示例二: 判断奇偶数</h4><p><strong>需求</strong></p>
+<ol>
+<li>定义方法isEvenNumber(), 该方法内部有一个整数num.</li>
+<li>判断num是奇数还是偶数, 并返回结果.</li>
+<li>在main方法中调用isEvenNumber()方法, 并打印结果.</li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">略.</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="4-3-实例三-获取最小值"><a href="#4-3-实例三-获取最小值" class="headerlink" title="4.3 实例三: 获取最小值"></a>4.3 实例三: 获取最小值</h4><p><strong>需求</strong></p>
+<ol>
+<li>定义方法getMin(), 该方法内部有两个整数. </li>
+<li>通过该方法, 获取两个整数的最小值, 并返回.</li>
+<li>在main方法中调用getMin()方法, 获取最小值并打印.</li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">略.</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="5-有参有返回值的方法"><a href="#5-有参有返回值的方法" class="headerlink" title="5. 有参有返回值的方法"></a>5. 有参有返回值的方法</h3><p>有参有返回值的方法的意思是: 调用方法时, 我们不仅需要传入具体的参数, 方法执行完毕后, 还会给我们返回具体的结果. </p>
+<p><strong>具体定义格式</strong></p>
+<blockquote>
+<p>下述这个格式就是方法的通用格式.</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> 返回值的数据类型 方法名(参数类型 参数<span class="number">1</span>, 参数类型 参数<span class="number">2</span>) &#123;</span><br><span class="line">    <span class="comment">//方法体;</span></span><br><span class="line">    <span class="keyword">return</span> 具体的返回值;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>具体调用格式</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//直接调用</span></span><br><span class="line">方法名(参数值<span class="number">1</span>, 参数值<span class="number">2</span>);	<span class="comment">//参数的个数, 及对应参数的类型要和定义方法时的参数列表保持一致.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//输出调用</span></span><br><span class="line">System.out.println(方法名());</span><br><span class="line"></span><br><span class="line"><span class="comment">//赋值调用</span></span><br><span class="line">数据类型 变量名 = 方法名();</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="5-1-示例一-定义求和方法"><a href="#5-1-示例一-定义求和方法" class="headerlink" title="5.1 示例一: 定义求和方法"></a>5.1 示例一: 定义求和方法</h4><p><strong>需求</strong></p>
+<ol>
+<li>定义方法getSum(), 接收两个int类型的整数.</li>
+<li>获取上述两个整数的和, 并返回.</li>
+<li>在main方法中调用getSum()方法, 并打印结果.</li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">略.</span><br></pre></td></tr></table></figure>
+
+<p><strong>图解</strong><br>略.</p>
+<h4 id="5-2-示例二-判断奇偶数"><a href="#5-2-示例二-判断奇偶数" class="headerlink" title="5.2 示例二: 判断奇偶数"></a>5.2 示例二: 判断奇偶数</h4><p><strong>需求</strong></p>
+<ol>
+<li>定义方法isEvenNumber(), 该方法接收一个int类型的整数num.</li>
+<li>判断num是奇数还是偶数, 并返回结果.</li>
+<li>在main方法中调用isEvenNumber()方法, 并打印结果.</li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">略.</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="5-3-实例三-获取最大值"><a href="#5-3-实例三-获取最大值" class="headerlink" title="5.3 实例三: 获取最大值"></a>5.3 实例三: 获取最大值</h4><p><strong>需求</strong></p>
+<ol>
+<li>定义方法getMax(), 该方法接收两个整数. </li>
+<li>通过该方法, 获取两个整数的最大值, 并返回.</li>
+<li>在main方法中调用getMax()方法, 获取最大值并打印.</li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">略.</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="5-3-思考题"><a href="#5-3-思考题" class="headerlink" title="5.3 思考题"></a>5.3 思考题</h4><ol>
+<li>方法与方法之间可以嵌套定义吗?</li>
+<li>方法没有具体的返回值时, 返回值的数据类型可以不写吗?</li>
+<li>方法体中的`return关键字可以省略吗?</li>
+</ol>
+<h3 id="6-练习题"><a href="#6-练习题" class="headerlink" title="6. 练习题"></a>6. 练习题</h3><h4 id="6-1-示例一-打印偶数"><a href="#6-1-示例一-打印偶数" class="headerlink" title="6.1 示例一: 打印偶数"></a>6.1 示例一: 打印偶数</h4><p><strong>需求</strong></p>
+<ol>
+<li>提示用户录入一个3~100之间的整数并接收. </li>
+<li>打印1到该整数之间, 所有的偶数, 并按照3个一行的形式进行输出.</li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="6-2-案例二-打印字符"><a href="#6-2-案例二-打印字符" class="headerlink" title="6.2 案例二: 打印字符"></a>6.2 案例二: 打印字符</h4><p><strong>需求</strong></p>
+<ol>
+<li>有定义一个方法,可以接受一个整数,</li>
+<li>如果为[90,100]这个范围方法返回’A’</li>
+<li>如果为[80,90)这个范围方法返回’B’</li>
+<li>如果为[70,80)这个范围方法返回’C’</li>
+<li>如果为[60,70)这个范围方法返回’D’</li>
+<li>如果为[0,60)这个范围方法返回’E’</li>
+<li>整数不在以上范围的返回’F’</li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="6-3-案例三-遍历数组"><a href="#6-3-案例三-遍历数组" class="headerlink" title="6.3 案例三: 遍历数组"></a>6.3 案例三: 遍历数组</h4><p><strong>需求</strong></p>
+<ol>
+<li>定义方法printArray(), 接收一个int类型的数组.</li>
+<li>通过该方法, 实现遍历数组的功能. </li>
+<li>在main方法中, 调用方法, 打印指定的数组. </li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="6-4-案例四-获取数组最值"><a href="#6-4-案例四-获取数组最值" class="headerlink" title="6.4 案例四: 获取数组最值"></a>6.4 案例四: 获取数组最值</h4><p><strong>需求</strong></p>
+<ol>
+<li>定义方法printArray(), 接收一个int类型的数组.</li>
+<li>通过该方法, 获取数组元素中的最大值. </li>
+<li>在main方法中, 调用方法, 打印对应的结果. </li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="6-5-案例五-模拟计算器"><a href="#6-5-案例五-模拟计算器" class="headerlink" title="6.5 案例五: 模拟计算器"></a>6.5 案例五: 模拟计算器</h4><p><strong>需求</strong></p>
+<ol>
+<li>定义方法, 接收两个int类型的整数.</li>
+<li>分别获取这两个整数的加减乘除的运算结果, 然后返回. </li>
+<li>在main方法中调用该方法, 并打印结果.</li>
+</ol>
+<p><strong>参考代码</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>方法的训练</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/05/07/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
