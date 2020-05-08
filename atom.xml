@@ -6,11 +6,11 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-07T11:57:53.184Z</updated>
+  <updated>2020-05-08T00:53:48.326Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>刘杰同学</name>
     
   </author>
   
@@ -21,17 +21,17 @@
     <link href="http://yoursite.com/2020/05/07/My-New-Post/"/>
     <id>http://yoursite.com/2020/05/07/My-New-Post/</id>
     <published>2020-05-07T11:48:22.000Z</published>
-    <updated>2020-05-07T11:57:53.184Z</updated>
+    <updated>2020-05-08T00:53:48.326Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
+      &lt;h3 id=&quot;今日目标&quot;&gt;&lt;a href=&quot;#今日目标&quot; class=&quot;headerlink&quot; title=&quot;今日目标&quot;&gt;&lt;/a&gt;今日目标&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;了解方法的概念&lt;/li&gt;
+&lt;li&gt;掌握无参数无返回值方法的定义和调用&lt;/li&gt;
+&lt;li&gt;掌握有参数无返回值方法的定义和调用&lt;/li&gt;
+&lt;li&gt;掌握无参数有返回值方法的定义和调用&lt;/li&gt;
+&lt;li&gt;掌握有参数有返回值方法的定义和调用&lt;/li&gt;
+&lt;li&gt;
     
     </summary>
     
@@ -46,17 +46,11 @@
     <link href="http://yoursite.com/2020/05/07/hello-world/"/>
     <id>http://yoursite.com/2020/05/07/hello-world/</id>
     <published>2020-05-07T06:33:22.106Z</published>
-    <updated>2020-05-07T06:33:22.106Z</updated>
+    <updated>2020-05-08T00:54:01.300Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
-        
-      
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
     
     </summary>
     
