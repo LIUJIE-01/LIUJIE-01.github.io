@@ -12,7 +12,7 @@
 </ul>
 <hr>
 
-    <div id="aplayer-KqEizAFQ" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-edgyvUeZ" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="7557642316" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"
     ></div>
 
@@ -305,6 +305,9 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
       <tags>
         <tag>方法的训练</tag>
       </tags>

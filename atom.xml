@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-10T01:27:49.002Z</updated>
+  <updated>2020-05-13T02:31:44.634Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/05/07/My-New-Post/"/>
     <id>http://yoursite.com/2020/05/07/My-New-Post/</id>
     <published>2020-05-07T11:48:22.000Z</published>
-    <updated>2020-05-10T01:27:49.002Z</updated>
+    <updated>2020-05-13T02:31:44.634Z</updated>
     
     <summary type="html">
     
@@ -34,12 +34,14 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 
-    &lt;div id=&quot;aplayer-KqEizAFQ&quot; class=&quot;aplayer aplayer-tag-marker meting-tag-marker&quot;
+    &lt;div id=&quot;aplayer-edgyvUeZ&quot; class=&quot;aplayer aplayer-tag-marker meting-tag-marker&quot;
          data-id=&quot;7557642316&quot; data-server=&quot;tencent&quot; data-type=&quot;playlist&quot; data-mode=&quot;circulation&quot; data-autoplay=&quot;true&quot; data-mutex=&quot;false&quot; data-listmaxheight=&quot;340px&quot; data-preload=&quot;none&quot; data-theme=&quot;#ad7a86&quot;
     &gt;&lt;/div&gt;
     
     </summary>
     
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
     
     
       <category term="方法的训练" scheme="http://yoursite.com/tags/%E6%96%B9%E6%B3%95%E7%9A%84%E8%AE%AD%E7%BB%83/"/>
